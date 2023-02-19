@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+*::selection{
+    background-color: #f34f3f;
+    color: w;
+    
+}
+
+
 body{
     width: 100%;
 }
@@ -24,7 +31,7 @@ li{
 
 .sub-menu{
     width: 200px;
-    
+    background-color: aliceblue;
 }
 
 .menu-list-item{
@@ -34,6 +41,8 @@ li{
     font-family: Montserrat,sans-serif;
     
 }
+
+
 
  a{
     text-decoration: none;
@@ -66,13 +75,17 @@ li{
 
 }
 
-.menu-list-item:hover .sub-menu{
+.menu-list-item:hover .sub-menu {
     visibility: visible;
     opacity: 1;
     height: 100%;
     transition: 1s;    
     border-end-start-radius: 2px;
+    padding-top: 30px;
+   
 }
+
+
 
 .menu-list-item-1:hover .sub-menu-1{
     visibility: visible;
@@ -153,10 +166,11 @@ li{
     height: 50px;
     
     position: relative;
-    left: 0px;
+    left: -20px;
     top: 0px;
     
 }
+
 .post a{
     width: 250px;
     height: 50px;
@@ -169,8 +183,9 @@ li{
 }
 
 .post a p{
-    margin-top: 5px;
-    margin-left: 0;
+    margin-top: 30px;
+    position: absolute;
+    left: 110px;
     font-size: small;
     font-weight: lighter;
     color: rgb(184, 180, 180);
@@ -194,11 +209,50 @@ li{
     
 }
 
+.message {
+    display: flex;
+    margin-top: 80px;
+    position: relative;
+    left: 90px;
+}
+
 .message .title p{
     margin-top: 30px;
     display: block;
+    
 }
 
+.autor{
+    display: flex;
+    align-items: center;
+}
+
+.autor span{
+    font-weight: lighter;
+    margin: 10px;
+    font-size: small;
+    color: lightgrey;
+}
+
+.autor a{
+    font-size: small;
+    font-weight: lighter;
+    color: rgb(36, 36, 36);
+    font-family: Montserrat,sans-serif;
+}
+
+
+
+.autor a:hover{
+    color: red;
+    transition: 0.5s;
+   
+}
+.autor a i:hover{
+    color: red;
+    transition: 0.5s;
+   
+}
 
 
 .col-1{
